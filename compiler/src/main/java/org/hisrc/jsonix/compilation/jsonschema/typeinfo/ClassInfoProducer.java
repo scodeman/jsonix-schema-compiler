@@ -73,7 +73,7 @@ public class ClassInfoProducer<T, C extends T> extends PackagedTypeInfoProducer<
 									JsonixJsonSchemaConstants.NAMESPACE_URI_PROPERTY_NAME, typeName.getNamespaceURI()));
 		}
 		if (!propertiesOrder.isEmpty()) {
-			typeInfoSchema.add("propertiesOrder", propertiesOrder);
+			typeInfoSchema.add(JsonixJsonSchemaConstants.PROPERTIES_ORDER_PROPERTY_NAME , propertiesOrder);
 		}
 		return typeInfoSchema;
 	}
